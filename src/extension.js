@@ -7,7 +7,7 @@ const diff = require('semver/functions/diff');
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
-	this.extensionName = 'RobbOwen.neonheart-vscode';
+	this.extensionName = 'Vincent-the-gamer.neonheart';
 	this.cntx = context;
 	
 	const config = vscode.workspace.getConfiguration("neonheart");
@@ -59,30 +59,30 @@ function activate(context) {
 			const isEnabled = html.includes("neondreams.js");
 
 			if (!isEnabled) {
-				// delete neonheart script tag if there
-				let output = html.replace(/^.*(<!-- neonheart 84 --><script src="neondreams.js"><\/script><!-- NEON DREAMS -->).*\n?/mg, '');
+				// delete synthwave script tag if there
+				let output = html.replace(/^.*(<!-- SYNTHWAVE 84 --><script src="neondreams.js"><\/script><!-- NEON DREAMS -->).*\n?/mg, '');
 				// add script tag
-				output = html.replace(/\<\/html\>/g, `	<!-- neonheart 84 --><script src="neondreams.js"></script><!-- NEON DREAMS -->\n`);
+				output = html.replace(/\<\/html\>/g, `	<!-- SYNTHWAVE 84 --><script src="neondreams.js"></script><!-- NEON DREAMS -->\n`);
 				output += '</html>';
 	
 				fs.writeFileSync(htmlFile, output, "utf-8");
 				
 				vscode.window
-					.showInformationMessage("Neon Dreams enabled. VS code must reload for this change to take effect. Code may display a warning that it is corrupted, this is normal. You can dismiss this message by choosing 'Don't show this again' on the notification.", { title: "Restart editor to complete" })
+					.showInformationMessage("Neon Lights enabled. VS code must reload for this change to take effect. Code may display a warning that it is corrupted, this is normal. You can dismiss this message by choosing 'Don't show this again' on the notification.", { title: "Restart editor to complete" })
 					.then(function(msg) {
 						vscode.commands.executeCommand("workbench.action.reloadWindow");
 					});
 
 			} else {
 				vscode.window
-					.showInformationMessage('Neon dreams is already enabled. Reload to refresh JS settings.', { title: "Restart editor to refresh settings" })
+					.showInformationMessage('Neon Lights is already enabled. Reload to refresh JS settings.', { title: "Restart editor to refresh settings" })
 					.then(function(msg) {
 						vscode.commands.executeCommand("workbench.action.reloadWindow");
 					});
 			}
 		} catch (e) {
 			if (/ENOENT|EACCES|EPERM/.test(e.code)) {
-				vscode.window.showInformationMessage("Neon Dreams was unable to modify the core VS code files needed to launch the extension. You may need to run VS code with admin privileges in order to enable Neon Dreams.");
+				vscode.window.showInformationMessage("Neon Lights was unable to modify the core VS code files needed to launch the extension. You may need to run VS code with admin privileges in order to enable Neon Dreams.");
 				return;
 			} else {
 				vscode.window.showErrorMessage('Something went wrong when starting neon dreams');
@@ -122,17 +122,17 @@ function uninstall() {
 	const isEnabled = html.includes("neondreams.js");
 
 	if (isEnabled) {
-		// delete neonheart script tag if there
-		let output = html.replace(/^.*(<!-- neonheart 84 --><script src="neondreams.js"><\/script><!-- NEON DREAMS -->).*\n?/mg, '');
+		// delete synthwave script tag if there
+		let output = html.replace(/^.*(<!-- SYNTHWAVE 84 --><script src="neondreams.js"><\/script><!-- NEON DREAMS -->).*\n?/mg, '');
 		fs.writeFileSync(htmlFile, output, "utf-8");
 
 		vscode.window
-			.showInformationMessage("Neon Dreams disabled. VS code must reload for this change to take effect", { title: "Restart editor to complete" })
+			.showInformationMessage("Neon Lights disabled. VS code must reload for this change to take effect", { title: "Restart editor to complete" })
 			.then(function(msg) {
 				vscode.commands.executeCommand("workbench.action.reloadWindow");
 			});
 	} else {
-		vscode.window.showInformationMessage('Neon dreams isn\'t running.');
+		vscode.window.showInformationMessage('Neon Lights isn\'t running.');
 	}
 }
 

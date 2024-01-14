@@ -20,7 +20,7 @@
   //=============================
 
   /**
-   * @summary Check if the style element exists and that it has neonheart '84 color content
+   * @summary Check if the style element exists and that it has synthwave '84 color content
    * @param {HTMLElement} tokensEl the style tag
    * @param {object} replacements key/value pairs of colour hex and the glow styles to replace them with
    * @returns {boolean}
@@ -44,25 +44,25 @@
   }, styles);
 
   /**
-   * @summary Checks if a theme is applied, and that the theme belongs to the neonheart 84 family
+   * @summary Checks if a theme is applied, and that the theme belongs to the Synthwave 84 family
    * @returns {boolean}
    */
-  const usingneonheart = () => {
+  const usingSynthwave = () => {
     const appliedTheme = document.querySelector('[class*="theme-json"]');
-    const neonheartTheme = document.querySelector('[class*="RobbOwen-neonheart-vscode-themes"]');
-    return appliedTheme && neonheartTheme;
+    const synthWaveTheme = document.querySelector('[class*="RobbOwen-synthwave-vscode-themes"]');
+    return appliedTheme && synthWaveTheme;
   }
 
   /**
-   * @summary Checks if the theme is neonheart, and that the styles exist, ready for replacement
+   * @summary Checks if the theme is synthwave, and that the styles exist, ready for replacement
    * @param {HTMLElement} tokensEl the style tag
    * @param {object} replacements key/value pairs of colour hex and the glow styles to replace them with
    * @returns 
    */
   const readyForReplacement = (tokensEl, tokenReplacements) => tokensEl 
     ? (
-      // only init if we're using a neonheart 84 subtheme
-      usingneonheart() &&         
+      // only init if we're using a Synthwave 84 subtheme
+      usingSynthwave() &&         
       // does it have content ?
       themeStylesExist(tokensEl, tokenReplacements)
     )
@@ -91,11 +91,11 @@
     updatedThemeStyles = `${updatedThemeStyles}[CHROME_STYLES]`;
 
     const newStyleTag = document.createElement('style');
-    newStyleTag.setAttribute("id", "neonheart-84-theme-styles");
+    newStyleTag.setAttribute("id", "synthwave-84-theme-styles");
     newStyleTag.innerText = updatedThemeStyles.replace(/(\r\n|\n|\r)/gm, '');
     document.body.appendChild(newStyleTag);
     
-    console.log('neonheart \'84: NEON DREAMS initialised!');
+    console.log('Synthwave \'84: NEON DREAMS initialised!');
     
     // disconnect the observer because we don't need it anymore
     if (obs) {
