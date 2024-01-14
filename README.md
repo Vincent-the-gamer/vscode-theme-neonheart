@@ -62,3 +62,9 @@ Use `Custom CSS and JS Loader` extension.
 
 ## Glowing
 ![glowing](./.github/glowing-preview.png)
+
+# Changelog
+View [Changelog](./CHANGELOG.md)
+
+# License
+[MIT](./LICENSE)
