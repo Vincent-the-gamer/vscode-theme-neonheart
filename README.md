@@ -26,14 +26,14 @@ macOS:
 
 ```json
 "vscode_custom_css.imports": [
-    "file:///Users/{USER_NAME}/.vscode/extensions/glow.css"
+    "file:///Users/{USER_NAME}/.vscode/extensions/vincent-the-gamer.neonheart-{plugin-version}/glow.css"
 ],
 ```
 
 Windows: 
 ```json
 "vscode_custom_css.imports": [
-    "file://C:/Users/{USER_NAME}/.vscode/extensions/glow.css"
+    "file://C:/Users/{USER_NAME}/.vscode/extensions/vincent-the-gamer.neonheart-{plugin-version}/glow.css"
 ],
 ```
 
@@ -41,7 +41,7 @@ Linux:
 
 ```json
 "vscode_custom_css.imports": [
-    "file:///home/{USER_NAME}/.vscode/extensions/glow.css"
+    "file:///home/{USER_NAME}/.vscode/extensions/vincent-the-gamer.neonheart-{plugin-version}/glow.css"
 ],
 ```
 
