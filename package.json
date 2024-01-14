@@ -1,0 +1,72 @@
+{
+    "name": "neonheart",
+    "displayName": "NeonHeart",
+    "description": "An opinionated VS Code theme.",
+    "version": "0.1.0",
+    "author": "Vincent-the-gamer",
+    "publisher": "Vincent-the-gamer",
+    "icon": "icon.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Vincent-the-gamer/neonheart"
+    },
+    "engines": {
+        "vscode": "^1.33.0"
+    },
+    "keywords": [
+        "retro",
+        "80s"
+    ],
+    "categories": [
+        "Themes"
+    ],
+    "activationEvents": [
+        "onCommand:neonheart.enableNeon",
+        "onCommand:neonheart.disableNeon"
+    ],
+    "main": "./src/extension.js",
+    "contributes": {
+        "themes": [
+            {
+                "label": "NeonHeart",
+                "uiTheme": "vs-dark",
+                "path": "./themes/neonheart-color-theme.json"
+            }
+        ],
+        "commands": [
+            {
+                "command": "neonheart.enableNeon",
+                "title": "NeonHeart: Enable Neon Lights"
+            },
+            {
+                "command": "neonheart.disableNeon",
+                "title": "NeonHeart: Disable Neon Lights"
+            }
+        ],
+        "configuration": {
+            "title": "NeonHeart",
+            "properties": {
+                "neonheart.brightness": {
+                    "type": "number",
+                    "default": 0.45,
+                    "description": "Set the brightness value for the glow effect. 0.0 is fully transparent and 1.0 is fully bright"
+                },
+                "neonheart.disableGlow": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Disable the neon light effect."
+                }
+            }
+        }
+    },
+    "scripts": {
+        "publisher": "vsce create-publisher",
+        "login": "vsce login"
+    },
+    "dependencies": {
+        "semver": "^7.1.1"
+    },
+    "devDependencies": {
+        "@vscode/vsce": "^2.22.0"
+    }
+}
