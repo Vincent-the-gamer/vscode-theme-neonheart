@@ -20,7 +20,7 @@
   //=============================
 
   /**
-   * @summary Check if the style element exists and that it has synthwave '84 color content
+   * @summary Check if the style element exists and that it has neonheart color content
    * @param {HTMLElement} tokensEl the style tag
    * @param {object} replacements key/value pairs of colour hex and the glow styles to replace them with
    * @returns {boolean}
@@ -44,10 +44,10 @@
   }, styles);
 
   /**
-   * @summary Checks if a theme is applied, and that the theme belongs to the Synthwave 84 family
+   * @summary Checks if a theme is applied, and that the theme belongs to the NeonHeart family
    * @returns {boolean}
    */
-  const usingSynthwave = () => {
+  const usingNeonlight = () => {
     const appliedTheme = document.querySelector('[class*="theme-json"]');
     const synthWaveTheme = document.querySelector('[class*="RobbOwen-synthwave-vscode-themes"]');
     return appliedTheme && synthWaveTheme;
@@ -61,8 +61,8 @@
    */
   const readyForReplacement = (tokensEl, tokenReplacements) => tokensEl 
     ? (
-      // only init if we're using a Synthwave 84 subtheme
-      usingSynthwave() &&         
+      // only init if we're using a NeonHeart subtheme
+      usingNeonlight() &&         
       // does it have content ?
       themeStylesExist(tokensEl, tokenReplacements)
     )
@@ -73,7 +73,7 @@
    * @param {boolean} disableGlow 
    * @param {MutationObserver} obs 
    */
-  const initNeonDreams = (disableGlow, obs) => {
+  const initNeonLight = (disableGlow, obs) => {
     const tokensEl = document.querySelector('.vscode-tokens-styles');
 
     if (!tokensEl || !readyForReplacement(tokensEl, tokenReplacements)) {
@@ -95,7 +95,7 @@
     newStyleTag.innerText = updatedThemeStyles.replace(/(\r\n|\n|\r)/gm, '');
     document.body.appendChild(newStyleTag);
     
-    console.log('Synthwave \'84: NEON DREAMS initialised!');
+    console.log('Neon Heart: NEON LIGHT initialized!');
     
     // disconnect the observer because we don't need it anymore
     if (obs) {
@@ -114,7 +114,7 @@
         const tokensEl = document.querySelector('.vscode-tokens-styles');  
         if (readyForReplacement(tokensEl, tokenReplacements)) {
           // If everything we need is ready, then initialise
-          initNeonDreams([DISABLE_GLOW], observer);
+          initNeonLight([DISABLE_GLOW], observer);
         } else {
           // sometimes VS code takes a while to init the styles content, so if there stop this observer and add an observer for that
           observer.disconnect();
@@ -125,7 +125,7 @@
         const tokensEl = document.querySelector('.vscode-tokens-styles');      
         if (readyForReplacement(tokensEl, tokenReplacements)) {
           // Everything we need should be ready now, so initialise
-          initNeonDreams([DISABLE_GLOW], observer);
+          initNeonLight([DISABLE_GLOW], observer);
         }
       }
     }
@@ -134,7 +134,7 @@
   //=============================
   // Start bootstrapping!
   //=============================
-  initNeonDreams([DISABLE_GLOW]);
+  initNeonLight([DISABLE_GLOW]);
   // Grab body node
   const bodyNode = document.querySelector('body');
   // Use a mutation observer to check when we can bootstrap the theme

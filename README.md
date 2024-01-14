@@ -1,4 +1,4 @@
-<img src="./banner.png"/>
+<img src="./.github/banner.png"/>
 <h1 align="center">NeonHeart</h1>
 <p align="center">An opinionated VS Code theme.</p>
 

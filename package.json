@@ -60,8 +60,9 @@
         }
     },
     "scripts": {
-        "publisher": "vsce create-publisher",
-        "login": "vsce login"
+        "login": "vsce login",
+        "package": "vsce package",
+        "publish": "vsce publish"
     },
     "dependencies": {
         "semver": "^7.1.1"
