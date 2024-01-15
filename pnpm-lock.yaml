@@ -11,9 +11,6 @@ devDependencies:
   '@vscode/vsce':
     specifier: ^2.22.0
     version: 2.22.0
-  esno:
-    specifier: ^4.0.0
-    version: 4.0.0
   tsup:
     specifier: ^8.0.1
     version: 8.0.1(typescript@5.3.3)
@@ -844,13 +841,6 @@ packages:
     engines: {node: '>=0.8.0'}
     dev: true
 
-  /esno@4.0.0:
-    resolution: {integrity: sha512-tmaM9gfnSWqzePVJ5FJLYX9mMyE6ZevvOIvd1CMoMk2Fn1F3aKI/OQPjubS5wCIKlPpWfDfKFEtoslCNCiZJpQ==}
-    hasBin: true
-    dependencies:
-      tsx: 4.7.0
-    dev: true
-
   /execa@5.1.1:
     resolution: {integrity: sha512-8uSpZZocAZRBAPIEINJj3Lo9HyGitllczc27Eh5YYojjMFMn8yHMDMaUHE2Jqfq05D/wucwI4JGURyXt1vchyg==}
     engines: {node: '>=10'}
@@ -945,12 +935,6 @@ packages:
   /get-stream@6.0.1:
     resolution: {integrity: sha512-ts6Wi+2j3jQjqi70w5AlN8DFnkSwC+MqmxEzdEALB2qXZYV3X/b1CTfgPLGJNMeAWxdPfU8FO1ms3NUfaHCPYg==}
     engines: {node: '>=10'}
-    dev: true
-
-  /get-tsconfig@4.7.2:
-    resolution: {integrity: sha512-wuMsz4leaj5hbGgg4IvDU0bqJagpftG5l5cXIAvo8uZrqn0NJqwtfupTN00VnkQJPcIRrxYrm1Ue24btpCha2A==}
-    dependencies:
-      resolve-pkg-maps: 1.0.0
     dev: true
 
   /github-from-package@0.0.0:
@@ -1507,10 +1491,6 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /resolve-pkg-maps@1.0.0:
-    resolution: {integrity: sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw==}
-    dev: true
-
   /reusify@1.0.4:
     resolution: {integrity: sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==}
     engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
@@ -1819,17 +1799,6 @@ packages:
     transitivePeerDependencies:
       - supports-color
       - ts-node
-    dev: true
-
-  /tsx@4.7.0:
-    resolution: {integrity: sha512-I+t79RYPlEYlHn9a+KzwrvEwhJg35h/1zHsLC2JXvhC2mdynMv6Zxzvhv5EMV6VF5qJlLlkSnMVvdZV3PSIGcg==}
-    engines: {node: '>=18.0.0'}
-    hasBin: true
-    dependencies:
-      esbuild: 0.19.11
-      get-tsconfig: 4.7.2
-    optionalDependencies:
-      fsevents: 2.3.3
     dev: true
 
   /tunnel-agent@0.6.0:
