@@ -3,6 +3,10 @@
 <p align="center">An opinionated VS Code theme.</p>
 
 <p align="center">
+<a href="https://marketplace.visualstudio.com/items?itemName=vincent-the-gamer.neonheart" target="__blank"><img src="https://img.shields.io/visual-studio-marketplace/v/vincent-the-gamer.neonheart.svg?color=4d9375&amp;label=Marketplace&logo=visual-studio-code" alt="Visual Studio Marketplace Version" /></a>
+</p>
+
+<p align="center">
     <b><i>Let the neon lights colorize your heart. (๑•̀ㅂ•́)و✧</i></b>
 </p>
 
