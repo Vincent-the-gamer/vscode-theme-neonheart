@@ -6,25 +6,22 @@
     "author": "Vincent-the-gamer",
     "publisher": "Vincent-the-gamer",
     "icon": "icon.png",
+    "homepage": "https://github.com/Vincent-the-gamer/neonheart#readme",
     "repository": {
         "type": "git",
         "url": "https://github.com/Vincent-the-gamer/neonheart"
     },
     "engines": {
-        "vscode": "^1.33.0"
+        "vscode": "^1.83.0"
     },
     "keywords": [
-        "retro",
-        "80s"
+        "neonheart",
+        "cyberpunk"
     ],
     "categories": [
         "Themes"
     ],
-    "activationEvents": [
-        "onCommand:neonheart.enableNeon",
-        "onCommand:neonheart.disableNeon"
-    ],
-    "main": "./src/extension.js",
+    "main": "./dist/index.js",
     "contributes": {
         "themes": [
             {
@@ -36,10 +33,15 @@
     },
     "scripts": {
         "login": "vsce login",
-        "package": "vsce package",
-        "publish": "vsce publish"
+        "package": "vsce package --no-dependencies",
+        "publish": "vsce publish --no-dependencies",
+        "build": "tsup src/index.ts --external vscode"
     },
     "devDependencies": {
-        "@vscode/vsce": "^2.22.0"
+        "@types/vscode": "^1.85.0",
+        "@vscode/vsce": "^2.22.0",
+        "esno": "^4.0.0",
+        "tsup": "^8.0.1",
+        "typescript": "^5.3.3"
     }
 }
