@@ -64,6 +64,12 @@ Linux:
 ## Glowing
 ![glowing](./.github/glowing-preview.png)
 
+# Publish
+```shell
+pnpm run build
+pnpm run publish
+```
+
 # Changelog
 View [Changelog](./CHANGELOG.md)
 
