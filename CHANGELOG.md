@@ -1,3 +1,7 @@
+# V0.1.3
+- Enhance Glowing Effect.
+- Typescriptify.
+
 # V0.1.2
 - Add Glowing Codes.
 
