@@ -1,3 +1,7 @@
+# V0.1.5
+- Replace green texts. 
+- Enhance tab effect.
+
 # V0.1.4
 - Kawaii Pink Glowing Effect.（づ￣3￣）づ╭❤～
 
