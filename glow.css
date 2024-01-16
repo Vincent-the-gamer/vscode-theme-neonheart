@@ -59,7 +59,7 @@
   height: 4px;
   background-size: 200% 200%;
   width: 100%;
-  background-image: linear-gradient(to right, #fc28a8, #03edf9, #fc28a8, #03edf9, #fc28a8);
+  background-image: linear-gradient(to right, #fc28a8, #cd00ff, #001bff, #cd00ff, #fc28a8);
 
   animation: neonline 2s infinite;
 }
@@ -339,7 +339,7 @@ canvas {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(to right, #fc28a8, #03edf9) !important;
+  background: linear-gradient(to right, #fc28a8, #0000ff) !important;
 }
 
 /* update lightbulb to be neon */
