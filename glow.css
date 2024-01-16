@@ -81,7 +81,7 @@
 }
 
 .monaco-editor .cursor {
-  box-shadow: 0 0 15px 2px #00c3ff;
+  box-shadow: 0 0 15px 2px #ff65e5;
   animation: cursor .5s infinite linear;
 }
 
@@ -122,11 +122,11 @@
 
 @keyframes cursor {
   0% {
-    box-shadow: 0 0 5px 0 #00c3ff;
+    box-shadow: 0 0 5px 0 #ff65e5;
   }
 
   100% {
-    box-shadow: 0 0 35px 5px #00c3ff;
+    box-shadow: 0 0 35px 5px #ff65e5;
   }
 }
 
@@ -202,8 +202,8 @@
 .mtk8,
 .mtk9 {
   /* color: #fd8902; */
-  color: #ffcc00;
-  text-shadow: 0 0 2px #100c0f, 0 0 3px #ffaa0099, 0 0 5px #ffaa0099, 0 0 10px #ffaa0099;
+  color: #ff8ec8;
+  text-shadow: 0 0 2px #100c0f, 0 0 3px #ff8ec8a3, 0 0 5px #ff8ec8a3, 0 0 10px #ff8ec8a3, 0 0 15px #ff8ec8a3;
   font-style: italic;
 }
 
