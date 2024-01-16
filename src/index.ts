@@ -8,4 +8,3 @@ export function activate(this: any) {
 export function deactivate() {
 	vscode.window.showInformationMessage("NeonHeart Deactivated!")
 }
-

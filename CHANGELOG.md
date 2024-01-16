@@ -1,3 +1,6 @@
+# V0.1.4
+- Kawaii Pink Glowing Effect.（づ￣3￣）づ╭❤～
+
 # V0.1.3
 - Enhance Glowing Effect.
 - Typescriptify.
