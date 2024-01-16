@@ -252,7 +252,7 @@
       "name": "HTML or XML tag",
       "scope": "entity.name.tag",
       "settings": {
-        "foreground": "#00ff8c"
+        "foreground": "#ffcd00"
       }
     },
     {
@@ -302,7 +302,7 @@
       "name": "JS Export",
       "scope": ["keyword.control.export.js", "keyword.control.import.js"],
       "settings": {
-        "foreground": "#00ff8c"
+        "foreground": "#ffcc00"
       }
     },
     {
@@ -400,7 +400,7 @@
         "punctuation.definition.template-expression.end"
       ],
       "settings": {
-        "foreground": "#00ff8c"
+        "foreground": "#ffcc00"
       }
     },
     {
@@ -410,14 +410,14 @@
         "support.type.property-name.json"
       ],
       "settings": {
-        "foreground": "#00ff8c"
+        "foreground": "#ffcc00"
       }
     },
     {
       "name": "JS Switch control",
       "scope": "switch-block.expr.js",
       "settings": {
-        "foreground": "#00ff8c"
+        "foreground": "#ffcc00"
       }
     },
     {
@@ -519,7 +519,7 @@
       "name": "Python variable params",
       "scope": "variable.parameter.function-call.python",
       "settings": {
-        "foreground": "#00ff8c"
+        "foreground": "#ffcc00"
       }
     },
     {
@@ -550,7 +550,7 @@
       "name": "C placeholder",
       "scope": "constant.other.placeholder.c",
       "settings": {
-        "foreground": "#00ff8c",
+        "foreground": "#ffcc00",
         "fontStyle": "italic"
       }
     },
@@ -582,7 +582,7 @@
       "name": "C++ placeholder",
       "scope": "constant.other.placeholder.cpp",
       "settings": {
-        "foreground": "#00ff8c",
+        "foreground": "#ffcc00",
         "fontStyle": "italic"
       }
     },
@@ -593,7 +593,7 @@
         "keyword.control.directive.define.cpp"
       ],
       "settings": {
-        "foreground": "#00ff8c"
+        "foreground": "#ffcc00"
       }
     },
     {
@@ -815,7 +815,7 @@
         "markup.quote.markdown",
       ],
       "settings": {
-        "foreground": "#00ff8c",
+        "foreground": "#ffcc00",
       }
     },
     {
@@ -840,7 +840,7 @@
         "variable.parameter.dart",
       ],
       "settings": {
-        "foreground": "#00ff8c",
+        "foreground": "#ffcc00",
       }
     },
     {

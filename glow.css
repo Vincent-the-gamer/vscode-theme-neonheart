@@ -249,7 +249,6 @@
   overflow: hidden;
 }
 
-/* .monaco-editor > .overflow-guard > .monaco-scrollable-element:before { */
 .monaco-editor:before,
 .editor-group-container:before {
   background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 2px, #FFF 2px, #FFF 4px);
@@ -263,10 +262,6 @@
   right: 0;
   bottom: 0;
 }
-
-/* .monaco-editor .overflow-guard .margin {
-    background: #210A33;
-} */
 
 canvas {
   z-index: 2;
