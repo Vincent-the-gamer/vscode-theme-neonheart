@@ -1,3 +1,6 @@
+# V0.1.6
+- Modify theme color.
+
 # V0.1.5
 - Replace green texts. 
 - Enhance tab effect.
