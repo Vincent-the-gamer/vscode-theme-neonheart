@@ -48,9 +48,10 @@ Linux:
 
 Then, run `Enable NeonHeart Glowing`
 
-    - `Ctrl + Shift + P` or `Command + Shift + P`
-    - Input `enable neonheart glowing`
-      ![enable](./.github/enable.png)
+- `Ctrl + Shift + P` or `Command + Shift + P`
+- Input `enable neonheart glowing`
+
+    ![enable](./.github/enable.png)
 
 And happy hacking~~~ ☆´∀｀☆
 
