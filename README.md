@@ -73,3 +73,7 @@ View [Changelog](./CHANGELOG.md)
 
 # License
 [MIT](./LICENSE)
+
+# Special Thanks
+Custom CSS and JS Loader: 
+[be5invis/vscode-custom-css](https://github.com/be5invis/vscode-custom-css)
