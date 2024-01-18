@@ -22,8 +22,8 @@ function isVSCodeBelowVersion(version: string) {
 	return false;
 }
 
-export function activate(context: vscode.ExtensionContext) {
-	// this.extensionName = 'vincent-the-gamer.neonheart';
+export function activate(this: any, context: vscode.ExtensionContext) {
+	this.extensionName = 'vincent-the-gamer.neonheart';
 	const appDir = path.dirname(process.mainModule!.filename);
 	const isWin = /^win/.test(process.platform);
 	const base = appDir + (isWin ? "\\vs\\code" : "/vs/code");
