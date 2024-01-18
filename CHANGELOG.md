@@ -1,3 +1,6 @@
+# V0.1.8
+- Bundled `Custom CSS and JS Loader` into `NeonHeart`.
+
 # V0.1.6
 - Modify theme color.
 
