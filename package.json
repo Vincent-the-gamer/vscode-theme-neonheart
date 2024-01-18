@@ -2,7 +2,7 @@
     "name": "neonheart",
     "displayName": "NeonHeart",
     "description": "An opinionated VS Code theme.",
-    "version": "0.1.6",
+    "version": "0.1.7",
     "author": "Vincent-the-gamer",
     "publisher": "Vincent-the-gamer",
     "icon": "icon.png",
@@ -11,20 +11,25 @@
         "type": "git",
         "url": "https://github.com/Vincent-the-gamer/neonheart"
     },
+    "bugs": {
+        "url": "https://github.com/Vincent-the-gamer/neonheart/issues"
+    },
     "engines": {
         "vscode": "^1.85.0"
     },
-    "activationEvents": [
-        "onStartupFinished"
-    ],
     "keywords": [
         "neonheart",
         "cyberpunk"
     ],
     "categories": [
-        "Themes"
+        "Other"
     ],
     "main": "./dist/index.js",
+    "activationEvents": [
+        "onCommand:neonheart.installNeonHeart",
+        "onCommand:neonheart.uninstallNeonHeart",
+        "onCommand:neonheart.updateNeonHeart"
+    ],
     "contributes": {
         "themes": [
             {
@@ -32,7 +37,41 @@
                 "uiTheme": "vs-dark",
                 "path": "./themes/neonheart-color-theme.json"
             }
-        ]
+        ],
+        "commands": [
+            {
+                "command": "neonheart.installNeonHeart",
+                "title": "Enable NeonHeart Glowing"
+            },
+            {
+                "command": "neonheart.uninstallNeonHeart",
+                "title": "Disable NeonHeart Glowing"
+            },
+            {
+                "command": "neonheart.updateNeonHeart",
+                "title": "Reload NeonHeart Glowing"
+            }
+        ],
+        "configuration": {
+            "title": "NeonHeart Glowing Configuration",
+            "properties": {
+                "neonheart.imports": {
+                    "description": "CSS/JS files, as an array of URLs, not file paths",
+                    "type": "array",
+                    "default": []
+                },
+                "neonheart.statusbar": {
+                    "description": "Enable Status Indicator",
+                    "type": "boolean",
+                    "default": true
+                },
+                "neonheart.staging_dir": {
+                    "description": "Directory used for storing staged CSS/JS files. Must be inside VSCode's extension directory, otherwise VSCode will refuse to load the your custom CSS/JS.",
+                    "type": "string",
+                    "default": ""
+                }
+            }
+        }
     },
     "scripts": {
         "login": "vsce login",
@@ -41,9 +80,15 @@
         "build": "tsup src/index.ts --external vscode"
     },
     "devDependencies": {
+        "@types/node": "^20.11.5",
         "@types/vscode": "^1.85.0",
         "@vscode/vsce": "^2.22.0",
         "tsup": "^8.0.1",
         "typescript": "^5.3.3"
+    },
+    "dependencies": {
+        "file-url": "^4.0.0",
+        "node-fetch": "^2.7.0",
+        "uuid": "^9.0.1"
     }
 }

@@ -16,12 +16,9 @@ Search `neonheart` in VS Code extension menu.
 
 # Enable Code Glowing (Yeeeeeah!!!!)
 
-Use `Custom CSS and JS Loader` extension.
+From `v0.1.7`, you don't need to install `Custom CSS and JS` plugin, because `NeonHeart` has bundled it !!!
 
-![custom-css](./.github/custom-css.png)
-
-1. Install it.
-2. Config your path of `glow.css` in `settions.json`.
+All you need to do is configuring your path to `glow.css` in `settions.json`.
 
 > [!WARNING]
 > `file://` is required!!!!
@@ -29,14 +26,14 @@ Use `Custom CSS and JS Loader` extension.
 macOS:
 
 ```json
-"vscode_custom_css.imports": [
+"neonheart.imports": [
     "file:///Users/{USER_NAME}/.vscode/extensions/vincent-the-gamer.neonheart-{plugin-version}/glow.css"
 ],
 ```
 
 Windows: 
 ```json
-"vscode_custom_css.imports": [
+"neonheart.imports": [
     "file://C:/Users/{USER_NAME}/.vscode/extensions/vincent-the-gamer.neonheart-{plugin-version}/glow.css"
 ],
 ```
@@ -44,17 +41,16 @@ Windows:
 Linux:
 
 ```json
-"vscode_custom_css.imports": [
+"neonheart.imports": [
     "file:///home/{USER_NAME}/.vscode/extensions/vincent-the-gamer.neonheart-{plugin-version}/glow.css"
 ],
 ```
 
-3. Run Enable Custom CSS and JS
+3. Run `Enable NeonHeart Glowing`
 
     - `Ctrl + Shift + P` or `Command + Shift + P`
-    - Input `enable custom css and js`
-        ![enable](./.github/enable-custom-css.png)
-
+    - Input `enable neonheart glowing`
+      ![enable](./.github/enable.png)
 
 # Preview
 
