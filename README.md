@@ -1,6 +1,6 @@
 <img src="./.github/banner.png"/>
-<h1 align="center">NeonHeart</h1>
-<p align="center">An opinionated VS Code theme.</p>
+<h1 align="center">VS Code Theme NeonHeart</h1>
+<p align="center">An opinionated Visual Studio Code theme.</p>
 
 <p align="center">
 <a href="https://marketplace.visualstudio.com/items?itemName=vincent-the-gamer.neonheart" target="__blank"><img src="https://img.shields.io/visual-studio-marketplace/v/vincent-the-gamer.neonheart.svg?color=4d9375&amp;label=Marketplace&logo=visual-studio-code" alt="Visual Studio Marketplace Version" /></a>
