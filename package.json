@@ -76,7 +76,8 @@
         }
     },
     "scripts": {
-        "login": "vsce login",
+        "login:vsce": "vsce login",
+        "login:npm": "pnpm login --registry https://registry.npmjs.com",
         "pack": "vsce package",
         "publish": "vsce publish",
         "build": "tsup src/index.ts --external vscode",
