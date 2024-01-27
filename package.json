@@ -2,7 +2,7 @@
     "name": "neonheart",
     "displayName": "NeonHeart",
     "description": "An opinionated Visual Studio Code theme.",
-    "version": "0.1.8",
+    "version": "0.2.0",
     "author": "Vincent-the-gamer",
     "publisher": "Vincent-the-gamer",
     "icon": "icon.png",
@@ -19,7 +19,9 @@
     },
     "keywords": [
         "neonheart",
-        "cyberpunk"
+        "cyberpunk",
+        "vscode theme",
+        "theme"
     ],
     "categories": [
         "Themes"
@@ -77,12 +79,14 @@
         "login": "vsce login",
         "package": "vsce package",
         "publish": "vsce publish",
-        "build": "tsup src/index.ts --external vscode"
+        "build": "tsup src/index.ts --external vscode",
+        "dep": "taze"
     },
     "devDependencies": {
-        "@types/node": "^20.11.5",
+        "@types/node": "^20.11.7",
         "@types/vscode": "^1.85.0",
-        "@vscode/vsce": "^2.22.0",
+        "@vscode/vsce": "^2.23.0",
+        "taze": "^0.13.1",
         "tsup": "^8.0.1",
         "typescript": "^5.3.3"
     },

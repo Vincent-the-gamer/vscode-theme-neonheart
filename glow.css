@@ -145,12 +145,9 @@
   align-items: center;
   align-content: center;
   justify-content: center;
-
-  /* content: 'do epic shit...'; */
   content: ' ';
   font-weight: bold;
   font-size: 5em;
-
   color: #fc28a822;
   position: absolute;
   bottom: 40px;
@@ -180,11 +177,10 @@
   }
 }
 
-
 .mtk3,
 .mtk6 {
-  color: #61e2ff;
-  text-shadow: 0 0 2px #001716, 0 0 5px #03edf933, 0 0 10px #ffff6633;
+  color: cyan;
+  text-shadow: 0 0 20px cyan;
 }
 
 .mtk3.mtki {
@@ -201,9 +197,8 @@
 
 .mtk8,
 .mtk9 {
-  /* color: #fd8902; */
-  color: #ff8ec8;
-  text-shadow: 0 0 2px #100c0f, 0 0 3px #ff8ec8a3, 0 0 5px #ff8ec8a3, 0 0 10px #ff8ec8a3, 0 0 15px #ff8ec8a3;
+  color: rgb(239, 231, 231);
+  text-shadow: 0 0 2px #100c0f, 0 0 3px #ff8ec8a3, 0 0 5px #ff0084, 0 0 10px #ff0084, 0 0 15px #ff0084;
   font-style: italic;
 }
 
