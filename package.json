@@ -2,7 +2,7 @@
     "name": "neonheart",
     "displayName": "NeonHeart",
     "description": "An opinionated Visual Studio Code theme.",
-    "version": "0.2.0",
+    "version": "0.1.9",
     "author": "Vincent-the-gamer",
     "publisher": "Vincent-the-gamer",
     "icon": "icon.png",
@@ -77,7 +77,7 @@
     },
     "scripts": {
         "login": "vsce login",
-        "package": "vsce package",
+        "pack": "vsce package",
         "publish": "vsce publish",
         "build": "tsup src/index.ts --external vscode",
         "dep": "taze"
