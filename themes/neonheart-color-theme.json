@@ -259,7 +259,7 @@
       "name": "HTML or XML tag brackets",
       "scope": ["punctuation.definition.tag"],
       "settings": {
-        "foreground": "#00fffb"
+        "foreground": "#ff7800"
       }
     },
     {
@@ -362,7 +362,7 @@
       "name": "Support function",
       "scope": "support.function",
       "settings": {
-        "foreground": "#00fffb"
+        "foreground": "#ff7800"
       }
     },
     {
@@ -424,7 +424,7 @@
       "name": "JS object path",
       "scope": "variable.other.constant.property.js, variable.other.property.js",
       "settings": {
-        "foreground": "#00e1ff"
+        "foreground": "#ff7800"
       },
     },
     {
@@ -445,7 +445,7 @@
       "name": "CSS #id",
       "scope": "entity.other.attribute-name.id",
       "settings": {
-        "foreground": "#00fffb"
+        "foreground": "#ff7800"
       }
     },
     {
@@ -512,7 +512,7 @@
       "name": "Python function call",
       "scope": "meta.function-call.generic.python",
       "settings": {
-        "foreground": "#00fffb"
+        "foreground": "#ff7800"
       }
     },
     {

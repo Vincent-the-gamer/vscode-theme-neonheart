@@ -2,20 +2,20 @@
     "name": "neonheart",
     "displayName": "NeonHeart",
     "description": "An opinionated Visual Studio Code theme.",
-    "version": "0.1.9",
+    "version": "0.1.10",
     "author": "Vincent-the-gamer",
     "publisher": "Vincent-the-gamer",
     "icon": "icon.png",
-    "homepage": "https://github.com/Vincent-the-gamer/neonheart#readme",
+    "homepage": "https://github.com/Vincent-the-gamer/vscode-theme-neonheart#readme",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Vincent-the-gamer/neonheart"
+        "url": "https://github.com/Vincent-the-gamer/vscode-theme-neonheart"
     },
     "bugs": {
-        "url": "https://github.com/Vincent-the-gamer/neonheart/issues"
+        "url": "https://github.com/Vincent-the-gamer/vscode-theme-neonheart/issues"
     },
     "engines": {
-        "vscode": "^1.85.0"
+        "vscode": "^1.88.1"
     },
     "keywords": [
         "neonheart",
@@ -84,12 +84,12 @@
         "dep": "taze"
     },
     "devDependencies": {
-        "@types/node": "^20.11.7",
-        "@types/vscode": "^1.85.0",
-        "@vscode/vsce": "^2.23.0",
-        "taze": "^0.13.1",
-        "tsup": "^8.0.1",
-        "typescript": "^5.3.3"
+        "@types/node": "^20.12.7",
+        "@types/vscode": "^1.88.0",
+        "@vscode/vsce": "^2.25.0",
+        "taze": "^0.13.6",
+        "tsup": "^8.0.2",
+        "typescript": "^5.4.5"
     },
     "dependencies": {
         "file-url": "^4.0.0",
