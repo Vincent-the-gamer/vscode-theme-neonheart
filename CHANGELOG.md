@@ -1,3 +1,6 @@
+# V0.1.10
+- Modify theme color.
+
 # V0.1.9
 - Enhance glowing effect.
 
