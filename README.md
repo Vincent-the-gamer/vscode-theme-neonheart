@@ -18,7 +18,7 @@ Search `neonheart` in VS Code extension menu.
 
 From `v0.1.8`, you don't need to install `Custom CSS and JS` plugin, because `NeonHeart` has bundled it !!!
 
-All you need to do is configuring your path to `glow.css` in `settions.json`.
+All you need to do is configuring your path to `glow.css` in `settings.json`.
 
 > [!WARNING]
 > `file://` is required!!!!
