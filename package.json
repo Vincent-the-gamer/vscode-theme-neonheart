@@ -2,7 +2,7 @@
     "name": "neonheart",
     "displayName": "NeonHeart",
     "description": "An opinionated Visual Studio Code theme.",
-    "version": "0.1.10",
+    "version": "0.2.0",
     "author": "Vincent-the-gamer",
     "publisher": "Vincent-the-gamer",
     "icon": "icon.png",
@@ -27,11 +27,6 @@
         "Themes"
     ],
     "main": "./dist/index.js",
-    "activationEvents": [
-        "onCommand:neonheart.installNeonHeart",
-        "onCommand:neonheart.uninstallNeonHeart",
-        "onCommand:neonheart.updateNeonHeart"
-    ],
     "contributes": {
         "themes": [
             {
@@ -82,19 +77,19 @@
         "pack": "vsce package",
         "publish": "vsce publish",
         "build": "tsup src/index.ts --external vscode",
-        "dep": "taze"
+        "dep": "taze major"
     },
     "devDependencies": {
-        "@types/node": "^20.12.7",
-        "@types/vscode": "^1.88.0",
-        "@vscode/vsce": "^2.25.0",
-        "taze": "^0.13.6",
-        "tsup": "^8.0.2",
-        "typescript": "^5.4.5"
+        "@types/node": "^22.8.1",
+        "@types/vscode": "^1.94.0",
+        "@vscode/vsce": "^3.2.1",
+        "taze": "^0.17.2",
+        "tsup": "^8.3.5",
+        "typescript": "^5.6.3"
     },
     "dependencies": {
         "file-url": "^4.0.0",
         "node-fetch": "^2.7.0",
-        "uuid": "^9.0.1"
+        "uuid": "^11.0.1"
     }
 }
