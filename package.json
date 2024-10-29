@@ -15,7 +15,7 @@
         "url": "https://github.com/Vincent-the-gamer/vscode-theme-neonheart/issues"
     },
     "engines": {
-        "vscode": "^1.88.1"
+        "vscode": "^1.94.0"
     },
     "keywords": [
         "neonheart",
@@ -80,7 +80,7 @@
         "dep": "taze major"
     },
     "devDependencies": {
-        "@types/node": "^22.8.1",
+        "@types/node": "^22.8.2",
         "@types/vscode": "^1.94.0",
         "@vscode/vsce": "^3.2.1",
         "taze": "^0.17.2",
@@ -90,6 +90,6 @@
     "dependencies": {
         "file-url": "^4.0.0",
         "node-fetch": "^2.7.0",
-        "uuid": "^11.0.1"
+        "uuid": "^11.0.2"
     }
 }
