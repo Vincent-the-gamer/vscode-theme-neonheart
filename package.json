@@ -71,9 +71,8 @@
         }
     },
     "scripts": {
-        "login:vsce": "vsce login",
-        "logout:vsce": "vsce logout",
-        "login:npm": "pnpm login --registry https://registry.npmjs.com",
+        "login:vsce": "vsce login vincent-the-gamer",
+        "logout:vsce": "vsce logout vincent-the-gamer",
         "pack": "vsce package",
         "publish": "vsce publish",
         "build": "tsup src/index.ts --external vscode",
